@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Col — Assistance</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f7f8fa;
+    --border: #e5e7eb;
+    --text: #14151a;
+    --muted: #64748b;
+    --accent: #4f46e5;
+    --accent-soft: #eef2ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0c10;
+      --surface: #16181d;
+      --border: #262931;
+      --text: #f2f3f5;
+      --muted: #9aa1ac;
+      --accent: #818cf8;
+      --accent-soft: #1c1d2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 48px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2.4em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 1.05em;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.05em;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin: 16px 0;
+  }
+  .card p { margin: 0; color: var(--muted); }
+  .contact-email {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--text);
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h2 { margin-bottom: 6px; }
+  .faq-item p { color: var(--muted); margin: 0; }
+  section { margin-top: 40px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.85em;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <span class="badge">Support</span>
+  <h1>Col</h1>
+  <p class="subtitle">Assistance</p>
+
+  <div class="card">
+    <h2>Nous contacter</h2>
+    <p>Pour toute question, problème ou suggestion concernant l'application Col :</p>
+    <a class="contact-email" href="mailto:col.app.support@gmail.com">col.app.support@gmail.com</a>
+  </div>
+
+  <section>
+    <div class="faq-item">
+      <h2>La synchronisation entre mes appareils ne fonctionne pas</h2>
+      <p>Vérifiez que iCloud est activé pour Col dans Réglages &gt; [votre nom] &gt; iCloud, et que vous êtes connecté au même compte iCloud sur tous vos appareils.</p>
+    </div>
+    <div class="faq-item">
+      <h2>Mes widgets ne se mettent pas à jour</h2>
+      <p>Retirez le widget de l'écran d'accueil et ajoutez-le à nouveau, ou redémarrez votre appareil.</p>
+    </div>
+    <div class="faq-item">
+      <h2>Confidentialité</h2>
+      <p>Col ne collecte aucune donnée financière. La synchronisation entre vos appareils se fait exclusivement via votre propre compte iCloud.</p>
+    </div>
+  </section>
+
+  <footer>Col — dernière mise à jour : août 2026</footer>
+</body>
+</html>
